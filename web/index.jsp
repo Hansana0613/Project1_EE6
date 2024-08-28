@@ -9,6 +9,8 @@
     <body>
         <h1>Home</h1>
         
+        <button>Logout</button>
+        
         <div class="div-main">
             <div class="div-sub">Mobile: ${sessionScope.user.mobile}</div>
         </div>

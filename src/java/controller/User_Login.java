@@ -25,14 +25,11 @@ public class User_Login extends HttpServlet {
             User user = userMap.get(mobile);
 
             if (user.getPassword().equals(password)) {
-
                 request.getSession().setAttribute("user", user);
                 response.sendRedirect("index.jsp");
-                
             } else {
                 response.sendRedirect("user_login.jsp?msg=error2");
             }
-            
         } else {
             response.sendRedirect("user_login.jsp?msg=error2");
         }
