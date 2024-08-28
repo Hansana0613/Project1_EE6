@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.User;
 
 @WebServlet(name = "User_Registration", urlPatterns = {"/User_Registration"})
 public class User_Registration extends HttpServlet {
@@ -18,6 +19,8 @@ public class User_Registration extends HttpServlet {
         String gender = request.getParameter("gender");
         String country = request.getParameter("country");
         String password = request.getParameter("password");
+        
+        User user = new User(mobile, name, gender, country, password);
         
     }
 }
