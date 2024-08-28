@@ -1,3 +1,7 @@
+*{
+    font-family: "montserrat";
+}
+
 .div-main{
     margin-bottom: 10px;
 }
@@ -6,6 +10,5 @@
     margin-bottom: 5px;
     color: mediumblue;
     font-weight: bold;
-    font-family: monospace;
     font-size: 16px
 }

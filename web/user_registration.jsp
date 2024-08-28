@@ -10,7 +10,7 @@
 
         <h1>User Registration</h1>
 
-        <form action="User_Registration" method="post">
+        <form action="User_Registration" method="POST">
 
             <div class="div-main">
                 <div class="div-sub">Mobile</div>
