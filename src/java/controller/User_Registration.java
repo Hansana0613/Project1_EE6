@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +11,7 @@ import model.User;
 
 @WebServlet(name = "User_Registration", urlPatterns = {"/User_Registration"})
 public class User_Registration extends HttpServlet {
-
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
@@ -20,7 +21,14 @@ public class User_Registration extends HttpServlet {
         String country = request.getParameter("country");
         String password = request.getParameter("password");
         
-        User user = new User(mobile, name, gender, country, password);
+        HashMap<String, User> userMap = (HashMap<String, User>) request.getServletContext().getAttribute("userMap");
         
+        if (userMap.containsKey(mobile)) {
+            response.sendRedirect("user_registration.jsp?msg=error1");
+        } else {
+            User user = new User(mobile, name, gender, country, password);
+            userMap.put(mobile, user);
+            response.sendRedirect("user_login.jsp");
+        }
     }
 }

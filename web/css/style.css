@@ -2,6 +2,10 @@
     font-family: "montserrat";
 }
 
+.error{
+    color: red;
+}
+
 .div-main{
     margin-bottom: 10px;
 }
