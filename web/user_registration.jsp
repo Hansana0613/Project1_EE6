@@ -10,24 +10,24 @@
 
         <h1>User Registration</h1>
 
-        <div>
-            <div>Mobile</div>
+        <div class="div-main">
+            <div class="div-sub">Mobile</div>
             <input type="text">
         </div>
 
-        <div>
-            <div>Name</div>
+        <div class="div-main">
+            <div class="div-sub">Name</div>
             <input type="text">
         </div>
 
-        <div>
-            <div>Gender</div>
+        <div class="div-main">
+            <div class="div-sub">Gender</div>
             <input type="radio" name="gender">            
             <input type="radio" name="gender">
         </div>
 
-        <div>
-            <div>Country</div>
+        <div class="div-main">
+            <div class="div-sub">Country</div>
             <select id="id">
                 <option>Australia</option>
                 <option>Canada</option>
@@ -38,8 +38,8 @@
 
         </div>
 
-        <div>
-            <div>Password</div>
+        <div class="div-main">
+            <div class="div-sub">Password</div>
             <input type="password">
         </div>
 

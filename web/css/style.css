@@ -1,8 +1,7 @@
-body{
-    align-items : center;
-    justify-content: center;
+.div-main{
+    margin-bottom: 10px;
 }
 
-div{
-    margin-bottom: 15px;
+.div-sub{
+    margin-bottom: 5px;
 }
