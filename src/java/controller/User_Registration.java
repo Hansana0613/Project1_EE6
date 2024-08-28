@@ -19,11 +19,5 @@ public class User_Registration extends HttpServlet {
         String country = request.getParameter("country");
         String password = request.getParameter("password");
         
-        System.out.println(mobile);
-        System.out.println(name);
-        System.out.println(gender);
-        System.out.println(country);
-        System.out.println(password);
-        
     }
 }
