@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,6 +10,10 @@
     <body>
 
         <h1>User Login</h1>
+
+        <c:if test="${param.msg=='error2'}">
+            <p class="error">Invalid login details</p>
+        </c:if>
         
         <form action="User_Login" method="POST">
 
