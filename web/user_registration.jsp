@@ -10,40 +10,44 @@
 
         <h1>User Registration</h1>
 
-        <div class="div-main">
-            <div class="div-sub">Mobile</div>
-            <input type="text">
-        </div>
+        <form action="User_Registration" method="post">
 
-        <div class="div-main">
-            <div class="div-sub">Name</div>
-            <input type="text">
-        </div>
+            <div class="div-main">
+                <div class="div-sub">Mobile</div>
+                <input type="text" name="mobile">
+            </div>
 
-        <div class="div-main">
-            <div class="div-sub">Gender</div>
-            <input type="radio" name="gender">            
-            <input type="radio" name="gender">
-        </div>
+            <div class="div-main">
+                <div class="div-sub">Name</div>
+                <input type="text" name="name">
+            </div>
 
-        <div class="div-main">
-            <div class="div-sub">Country</div>
-            <select id="id">
-                <option>Australia</option>
-                <option>Canada</option>
-                <option>Italy</option>
-                <option>Japan</option>
-                <option>Sri Lanka</option>
-            </select>
+            <div class="div-main">
+                <div class="div-sub">Gender</div>
+                <input type="radio" name="gender" value="Male"> <span>Male</span>            
+                <input type="radio" name="gender" value="Female"> <span>Female</span>
+            </div>
 
-        </div>
+            <div class="div-main">
+                <div class="div-sub">Country</div>
+                <select name="country">
+                    <option>Australia</option>
+                    <option>Canada</option>
+                    <option>Italy</option>
+                    <option>Japan</option>
+                    <option>Sri Lanka</option>
+                </select>
 
-        <div class="div-main">
-            <div class="div-sub">Password</div>
-            <input type="password">
-        </div>
+            </div>
 
-        <button>Create Account</button>
+            <div class="div-main">
+                <div class="div-sub">Password</div>
+                <input type="password" name="password">
+            </div>
+
+            <button type="submit">Create Account</button>
+
+        </form>
 
     </body>
 </html>
